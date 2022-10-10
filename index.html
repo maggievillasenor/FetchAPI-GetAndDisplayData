@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APIFetch</title>
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./styles/APIFetch.css">
+     <!-- CSS Font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  </head>
+  <body>
+    <!-- Titulo -->
+    <h1 class="text-center" my-5>Get & Display data from Api</h1>
+    <br>
+    <!-- Botón de acción -->
+    <div class="row justify-content-center text-center">
+        <div class="col-sm-4">
+            <button id="btn" class="btn btn-outline-secondary">Show Users</button>
+        </div>
+    </div>
+    <br>
+
+    <!-- Tabla de contenido -->
+    <div class="container-md table-responsive" id="table">
+        <table class="table mx-auto">
+            <thead class="table-secondary" >
+                <!-- Encabezado -->
+                <tr>
+                    <th scope="col-md-1">id</th>
+                    <th scope="col-md-3">Image</th>
+                    <th scope="col-md-3">First Name</th>
+                    <th scope="col-md-3">Last Name</th>
+                    <th scope="col-md-2">Email</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla -->
+            <tbody id="contenido" class="container-md table-responsive" >
+               <!--  <tr>
+                    <th scope="row" id="user-id">-</th>
+                    <td id="user-avatar">-</td>
+                    <td id="user-name">-</td>
+                    <td id="user-lastname">-</td>
+                    <td id="user-email">-</td>
+                </tr> -->
+            </tbody> 
+        </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./scripts/APIFetch.js"></script>
+    
+    <!-- Pie de página -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/maggievillasenor"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-github"></i>
+            </a>
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/margarita-villasenor/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright || Maggie: <em>Api Fetch - Get and Display data from API Reqres(get delayed)</em>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </body>
+</html>
